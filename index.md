@@ -1,11 +1,8 @@
 ---
 layout: default
 ---
-<a href="http://google.com.au/" rel="some text">![Foo](http://www.google.com.au/images/nav_logo7.png)</a>
 
-
-Text can be **bold**, _italic_, or ~~strikethrough~~.
-
+WARNING: Aspects of this site work better on a PC
 [Link to another page](./another-page.html).
 
 There should be whitespace between paragraphs.
