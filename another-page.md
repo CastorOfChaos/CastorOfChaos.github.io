@@ -7,7 +7,7 @@ layout: default copy
   <!-- Password-protected image (has data-password attribute) -->
   <div class="image-container password-protected">
     <img src="/assets/images/folder.png" alt="Protected image" class="responsive-image" 
-         data-target="/" data-password="secret1">
+         data-target="/" data-password="ThankYou">
          <p class="image-caption">Restricted</p>
   </div>
   
@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Get DOM elements
   const modal = document.getElementById('passwordModal');
+  //hash the password
   const passwordInput = document.getElementById('passwordInput');
   const passwordError = document.getElementById('passwordError');
   const submitButton = document.getElementById('submitPassword');
