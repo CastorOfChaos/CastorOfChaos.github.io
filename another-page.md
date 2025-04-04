@@ -7,7 +7,7 @@ layout: default copy
   <!-- Password-protected image (has data-password attribute) -->
   <div class="image-container password-protected">
     <img src="/assets/images/folder.png" alt="Protected image" class="responsive-image" 
-         data-target="/" data-password="ThankYou">
+         data-target="/" data-password="6ffe613e2919f074e477a0a80f95d6a1">
          <p class="image-caption">Restricted</p>
   </div>
   
@@ -96,10 +96,12 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+  const hash = bcrypt.hashSync("bacon", 10);
   
   // The rest of your event handlers for the modal
   if (submitButton && passwordInput && modal) {
     // Submit password
+    console.log(passwordInput)
     submitButton.addEventListener('click', function() {
       if (passwordInput.value === currentPassword) {
         // Correct password - navigate to target
