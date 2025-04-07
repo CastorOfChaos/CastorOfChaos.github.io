@@ -96,8 +96,6 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
-  const hash = bcrypt.hashSync("bacon", 10);
-  
   // The rest of your event handlers for the modal
   if (submitButton && passwordInput && modal) {
     // Submit password
