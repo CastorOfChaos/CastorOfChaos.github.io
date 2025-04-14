@@ -1,6 +1,81 @@
 ---
-layout: default
+layout: faq
 ---
 # FAQ
 
-
+<body>
+    <!-- Your site's header would be here, unaffected by the FAQ section -->
+    
+    <!-- Start of FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="faq-inner-container">
+            <div class="faq-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find the answers to (Hopefully) all your questions~!.</p>
+            </div>
+            
+            <div class="faq-items-container">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question">What's all this interdimensonial stuff? Do you believe it??</div>
+                    <div class="faq-answer">
+                        <p>Shhhhh... it's just immersion. I'm sorry to break the illusion! Hey it makes it more fun though. doesn't it? Or maybe that's just me.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <div class="faq-question">Why all this effort?</div>
+                    <div class="faq-answer">
+                        <p>Why do anything? It brings a sense of accomplishment in my life and joy. Plus fun side projects like this is excellent to brush up on my skills and explore things I would normally not attempt! I'll take whatever motivation I can.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <div class="faq-question">Do you have any Social Media to follow? What's your take on any Fandom drama?</div>
+                    <div class="faq-answer">
+                        <p>I'm incapable of having a healthy relationship on social media engaging with a fandom. Social Media loves to bring up drama no matter what tags you block or words, so it's better for me to avoid it and play in my little corner happy and unaware. I adore seeing peoples creations and the creativity they breath into characters and would LOVE to make more friends into my interests, but alas I'm a softy. I do love one on one interactions though so please don't hesitate to reach out if you want to chit chat!</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <div class="faq-question">Do you allow Fan art and/or translations?</div>
+                    <div class="faq-answer">
+                        <p>Yes! For translations please link and credit me + send me the link. For fanart this is always welcomed! I'd be beyond overjoyed if you shared it with me! All skill levels are welcomed and celebrated. I'm just flattered someone would create based on my work regardless :D</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                    <div class="faq-question">Do you switch fandoms/what ships do you like?</div>
+                    <div class="faq-answer">
+                        <p>I go with whatever consumes my life. In the past, it was Genshin Impact and as of writing this FAQ it is South Park. I never know how long these hyperfixations will hyperfixate, but I am very active reading in Ao3 for them while they are! As for ships this varies extremely by fandom. There is many I would read but am unlikely to write. Me being a pure multishipper is the biggest thing to know</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-footer">
+                <p>If you have more questions, please <a href="#contact">contact us</a>.</p>
+            </div>
+        </div>
+    </section>
+    <!-- End of FAQ Section -->
+    
+    <!-- Your site's remaining content would continue here -->
+    
+    <script>
+        // JavaScript for the FAQ accordion functionality, with namespaced function
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const faqItem = question.parentElement;
+                    faqItem.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
