@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+{% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    {% include head-custom.html %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Bookshelf</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .bookshelf-container {
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+        
+        .shelf {
+            height: 200px;
+            background-image: url('/assets/images/wood_bookshelf_background.jpeg');
+            position: relative;
+            margin-bottom: 40px;
+            border-radius: 5px;
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: flex-end;
+            padding: 0 10px;
+        }
+        
+        .shelf::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: -5px;
+            right: -5px;
+            height: 15px;
+            background-image: url('/assets/images/bookshelf_wood.jpg');
+            border-radius: 5px;
+        }
+        
+        .book {
+            width: 60px;
+            height: 180px;
+            background-color: #1E90FF;
+            margin: 0 5px;
+            border-radius: 3px 0 0 3px;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            transform-origin: bottom center;
+            box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        .book-title {
+            transform: rotate(-90deg);
+            color: white;
+            font-weight: bold;
+            font-size: 12px;
+            text-align: center;
+            width: 150px;
+        }
+        
+        .book:hover {
+            transform: translateY(-20px) rotate(5deg);
+            box-shadow: -5px 5px 10px rgba(0,0,0,0.3);
+            z-index: 10;
+        }
+        
+        .book:nth-child(1) { background-color: #FF6347; }
+        .book:nth-child(2) { background-color: #32CD32; }
+        .book:nth-child(3) { background-color: #4169E1; }
+        .book:nth-child(4) { background-color: #FFD700; }
+        .book:nth-child(5) { background-color: #8A2BE2; }
+        .book:nth-child(6) { background-color: #FF69B4; }
+        .book:nth-child(7) { background-color: #20B2AA; }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.7);
+            z-index: 100;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .modal-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 600px;
+            width: 80%;
+            text-align: center;
+        }
+        
+        .close-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+  </head>
+  
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">{{ site.title | default: site.github.repository_name }}</h1>
+        <p class="header">{{ site.description | default: site.github.project_tagline }}</p>
+
+        <ul>
+          {% if site.show_downloads %}
+            <li class="download"><a class="buttons" href="{{ site.github.zip_url }}">Download ZIP</a></li>
+            <li class="download"><a class="buttons" href="{{ site.github.tar_url }}">Download TAR</a></li>
+          {% endif %}
+          <li><a class="buttons github" href="/">Home</a></li>
+        </ul>
+
+        {% if site.github.is_project_page %}
+          <p class="header">This project is maintained by <a class="header name" href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}
+
+        {% if site.github.is_user_page %}
+          <ul>
+            <li><a class="buttons github" href="{{ site.github.owner_url }}">GitHub Profile</a></li>
+          </ul>
+        {% endif %}
+      </header>
+
+      <section>
+        {{ content }}
+      </section>
+
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  </body>
+</html>
