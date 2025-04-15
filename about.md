@@ -16,9 +16,10 @@ layout: about
             </div>
             <div class="profile-content">
                 <h2>Who I Am</h2>
-                <p>I'm [Your Name], a [your profession] based in [your location]. With [X years] of experience in [your field], I specialize in [your specialties].</p>
-                <p>My journey began when [brief story about how you started]. Since then, I've been dedicated to [what you're passionate about in your work/life].</p>
-                <p>When I'm not [your profession], you can find me [your hobbies or interests outside of work].</p>
+                <p>You may call me Alcastor or Alas, I am an interdimensional cataloguer. With my many years of observations I have decided to begin writing down these worlds I have observed and sharing it with this world. This may also include my attempts to recreate some of the things I have seen in the form of artwork.</p>
+                <p>My journey began years ago when I began my observations as a young dragonling. Ever since then I have been smitten by reading other people's works and then soon began to log a few of my own.</p>
+                <p>In my freetime you'll find me reading, doing art, and enjoying the many other joys of life like the boon that is hottubs or spending time with friends.</p>
+                <p> Side note, I am purely an amatuer in all my pursuits, but they bring me the greatest of joy as well as the support from lovely people like you reading this</p>
             </div>
         </section>
         
