@@ -4,48 +4,19 @@ layout: works
 
 <body>
     <div class="bookshelf-container">
-        <h1>My Interactive Bookshelf</h1>
+        <h1>My Works</h1>
+        Universe Key: 
+        SP = South Park
         <div class="shelf">
             <div class="book" data-book="book1">
-                <div class="book-title">MLM</div>
-            </div>
-            <div class="book" data-book="book2">
-                <div class="book-title">JavaScript Guide</div>
-            </div>
-            <div class="book" data-book="book3">
-                <div class="book-title">React Fundamentals</div>
-            </div>
-            <div class="book" data-book="book4">
-                <div class="book-title">UX Design</div>
-            </div>
-            <div class="book" data-book="book5">
-                <div class="book-title">Node.js Projects</div>
-            </div>
-            <div class="book" data-book="book6">
-                <div class="book-title">Python Mastery</div>
-            </div>
-            <div class="book" data-book="book7">
-                <div class="book-title">Data Science</div>
+                <div class="book-title">MLM - SP</div>
             </div>
         </div>
         
         <div class="shelf">
-            <div class="book" data-book="book8" style="background-color: #FF4500;">
-                <div class="book-title">Portfolio Showcase</div>
+            
             </div>
-            <div class="book" data-book="book9" style="background-color: #9370DB;">
-                <div class="book-title">About Me</div>
-            </div>
-            <div class="book" data-book="book10" style="background-color: #3CB371;">
-                <div class="book-title">Contact</div>
-            </div>
-            <div class="book" data-book="book11" style="background-color: #CD5C5C;">
-                <div class="book-title">Blog</div>
-            </div>
-            <div class="book" data-book="book12" style="background-color: #4682B4;">
-                <div class="book-title">Services</div>
-            </div>
-        </div>
+        
     </div>
     
     <div class="modal" id="bookModal">
@@ -60,9 +31,9 @@ layout: works
         // Book data - in a real implementation, clicking would redirect to pages
         const bookData = {
             book1: {
-                title: "HTML & CSS Basics",
-                description: "In a real implementation, clicking this would take you to the HTML & CSS section of your website.",
-                link: "/html-css-basics"
+                title: "Multi Level of Madness",
+                description: "Superheros with an MLM twist",
+                link: "/mlm.html"
             },
             book2: {
                 title: "JavaScript Guide",
@@ -132,12 +103,12 @@ layout: works
                 const bookInfo = bookData[bookId];
                 
                 // In a real implementation, you'd redirect instead:
-                // window.location.href = bookInfo.link;
+                window.location.href = bookInfo.link;
                 
                 // For this demo, we'll show a modal instead
-                modalTitle.textContent = bookInfo.title;
-                modalDescription.textContent = bookInfo.description;
-                modal.style.display = 'flex';
+                // modalTitle.textContent = bookInfo.title;
+                //modalDescription.textContent = bookInfo.description;
+                // modal.style.display = 'flex';
             });
         });
         

@@ -15,15 +15,8 @@ layout: default copy
   <!-- Regular image (no password protection) -->
   <div class="image-container">
     <img src="/assets/images/folder.png" alt="Regular image" class="responsive-image" 
-         data-target="/">
-          <p class="image-caption">Info</p>
-  </div>
-  
-  <!-- You can add more images (protected or not) following the same pattern -->
-  <div class="image-container">
-    <img src="/assets/images/folder.png" alt="Another regular image" class="responsive-image" 
-         data-target="/">
-          <p class="image-caption">Data</p>
+         data-target="./confident_redacted.html">
+          <p class="image-caption">Files</p>
   </div>
 </div>
 
@@ -215,3 +208,10 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 </script>
+<footer class="bg-gray-800 text-white py-12">
+            <div class="container mx-auto px-6">
+                <div class="border-t border-gray-700 mt-8 pt-8 text-center text-white-400">
+                    <p>VM ran on P.A.L.S resources. Confidential</p>
+                </div>
+            </div>
+        </footer>
