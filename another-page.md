@@ -8,7 +8,7 @@ layout: default copy
   <!-- Password-protected image (has data-password attribute) -->
   <div class="image-container password-protected">
     <img src="/assets/images/folder.png" alt="Protected image" class="responsive-image" 
-         data-target="/" data-password="$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy">
+         data-target="./1.html" data-password="$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy">
          <p class="image-caption">Restricted</p>
   </div>
   
