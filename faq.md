@@ -56,9 +56,6 @@ layout: faq
                 </div>
             </div>
             
-            <div class="faq-footer">
-                <p>If you have more questions, please <a href="#contact">contact us</a>.</p>
-            </div>
         </div>
     </section>
     <!-- End of FAQ Section -->

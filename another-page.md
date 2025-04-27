@@ -16,7 +16,13 @@ layout: default copy
   <div class="image-container">
     <img src="/assets/images/folder.png" alt="Regular image" class="responsive-image" 
          data-target="./confident_redacted.html">
-          <p class="image-caption">Files</p>
+          <p class="image-caption">E Files</p>
+  </div>
+
+  <div class="image-container">
+    <img src="/assets/images/folder.png" alt="Another regular image" class="responsive-image" 
+         data-target="./redacted.html">
+    <p class="image-caption">C Files</p>
   </div>
 </div>
 

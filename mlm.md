@@ -16,11 +16,12 @@ layout: mlm
                     <span class="meta-item">100k+ words</span>
                 </div>                
                 <div class="book-description">
-                  <p>Deep in the heart of an ancient city lies a library unlike any other. Its shelves stretch endlessly, containing books from every era and realm of human understanding. When young librarian Eleanor discovers a hidden manuscript that seems to predict the future, she's pulled into a centuries-old mystery that will challenge everything she believes about reality.</p>
-                    
-                     <p>As Eleanor delves deeper into the library's secrets, she encounters historical figures who have visited these halls before her, each leaving their mark on its collection. But not everyone wants these secrets revealed, and Eleanor soon discovers she isn't the only one searching for the truth hidden within these walls.</p>
-                    
-                    <p>"The Mysterious Library" combines rich historical detail with captivating mystery, taking readers on a journey through time, knowledge, and the transformative power of books. Jane Austen's masterful storytelling brings to life a world where the boundary between reality and fiction blurs, and where the greatest adventures begin with turning a page.</p>
+                  <p>Life within the town of South Park is anything but ordinary
+
+When a shadowy organization begins threading its tendrils through South Park's streets, Kenny notices the signs most others miss—townsfolk manipulated into pawns, whispered conversations in dark alleys, and friends who no longer seem quite themselves. As corruption seeps into every corner of his fucked up, yet beloved town, he realizes that the crosshairs of danger are no longer just on him. Salvation may demand even more sacrifices from a boy who has already died too many times to count. One fact remains all too clear throughout it all-
+</p>
+
+<p>He can't save the town alone.</p>
                 </div>
             </div>
         </div>
@@ -40,7 +41,7 @@ layout: mlm
                     <span>Snapshot of Wendy's Instagram</span>
                 </a>
                 
-                <a href="author.html" class="nav-button">
+                <a href="https://archiveofourown.org/works/60592750/chapters/154706599" class="nav-button">
                     Ao3 Link
                     <span>Read the work here</span>
                 </a>
