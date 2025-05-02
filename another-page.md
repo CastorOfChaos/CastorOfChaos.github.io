@@ -48,7 +48,9 @@ document.addEventListener('DOMContentLoaded', function() {
   let currentTarget = '';
   let currentPasswordHash = '';
   
-==
+  const knownPasswords = {
+    "secret1": "$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy"
+  };
   
   // Get DOM elements
   const modal = document.getElementById('passwordModal');
