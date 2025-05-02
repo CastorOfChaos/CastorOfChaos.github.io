@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
   let currentTarget = '';
   let currentPasswordHash = '';
   
-  const knownPasswords = {
+  const variable = {
     "secret1": "$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy"
   };
   
@@ -143,8 +143,8 @@ document.addEventListener('DOMContentLoaded', function() {
         // Try direct comparison first (for fallback)
         let isMatch = false;
         
-        // Check if it's one of our known passwords (fallback method)
-        if (knownPasswords[enteredPassword] === currentPasswordHash) {
+     
+        if (variable[enteredPassword] === currentPasswordHash) {
           console.log("Password matched using direct comparison");
           isMatch = true;
         } 
