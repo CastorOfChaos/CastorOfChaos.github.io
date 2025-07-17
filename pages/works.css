@@ -1,0 +1,195 @@
+
+
+.page {
+  font-family: 'Delius Swash Caps', cursive;
+  color: #dfcca8;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.page h2 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.page p {
+  margin-bottom: 15px;
+}
+
+
+.bookshelf-container {
+    background: url('/workspaces/CastorOfChaos.github.io/_site/assets/img/wood_bookshelf_background.jpeg')
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.bookshelf-container::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: url('/workspaces/CastorOfChaos.github.io/_site/assets/img/wood_bookshelf_background.jpeg')
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.shelf {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 30px;
+    position: relative;
+    padding: 0 20px;
+}
+
+.shelf::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background: linear-gradient(to bottom, #654321, #4a2c1a);
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.book {
+    width: 50px;
+    height: 200px;
+    margin: 0 2px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: block;
+    transform-origin: bottom center;
+}
+
+.book:hover {
+    transform: translateY(-10px) scale(1.05);
+    z-index: 10;
+}
+
+.book-spine {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 3px;
+    box-shadow: 
+        inset 2px 0 5px rgba(255, 255, 255, 0.3),
+        inset -2px 0 5px rgba(0, 0, 0, 0.3),
+        2px 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.book-title {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    max-height: 160px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.book-author {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 8px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Book colors */
+.book-1 .book-spine { background: linear-gradient(90deg, #8B0000, #DC143C); }
+.book-2 .book-spine { background: linear-gradient(90deg, #006400, #32CD32); }
+.book-3 .book-spine { background: linear-gradient(90deg, #00008B, #4169E1); }
+.book-4 .book-spine { background: linear-gradient(90deg, #8B008B, #DA70D6); }
+.book-5 .book-spine { background: linear-gradient(90deg, #FF8C00, #FFD700); }
+.book-6 .book-spine { background: linear-gradient(90deg, #2F4F4F, #708090); }
+.book-7 .book-spine { background: linear-gradient(90deg, #800000, #CD853F); }
+.book-8 .book-spine { background: linear-gradient(90deg, #4B0082, #9370DB); }
+.book-9 .book-spine { background: linear-gradient(90deg, #556B2F, #9ACD32); }
+.book-10 .book-spine { background: linear-gradient(90deg, #B22222, #FF6347); }
+.book-11 .book-spine { background: linear-gradient(90deg, #191970, #6495ED); }
+.book-12 .book-spine { background: linear-gradient(90deg, #8B4513, #D2691E); }
+
+.bookshelf-title {
+    text-align: center;
+    color: #f4f4f4;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+}
+
+.tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: rgba(0, 0, 0, 0.9);
+}
+
+.book:hover .tooltip {
+    opacity: 1;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .bookshelf-container {
+        padding: 20px;
+    }
+    
+    .book {
+        width: 40px;
+        height: 160px;
+    }
+    
+    .book-title {
+        font-size: 10px;
+        max-height: 120px;
+    }
+    
+    .book-author {
+        font-size: 7px;
+    }
+    
+    .bookshelf-title {
+        font-size: 2em;
+    }
+}

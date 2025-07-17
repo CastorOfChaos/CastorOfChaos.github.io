@@ -1,106 +1,72 @@
----
-layout: default
----
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Castor of Chaos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+
+</head>
 
 <body>
-    <!-- Full Page Landing Content - Assumes header is already in place -->
-    <div id="landing-page-content">
-        <!-- Main Navigation Section -->
-        <div class="container mx-auto px-6 mb-24">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 animate-fade-in">Welcome</h2>
-            <!-- Navigation Buttons -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-                <!-- About Me Button -->
-                <div class="animate-fade-in delay-200">
-                    <a href="./about.html" class="nav-button block bg-white border border-gray-200 rounded-xl overflow-hidden shadow hover:shadow-lg">
-                        <div class="h-40 bg-blue-50 flex items-center justify-center">
-                            <span class="button-icon text-5xl">👥</span>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">About Me</h3>
-                            <p class="button-description text-gray-600">
-                                More info on me.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <!-- Services Button -->
-                <div class="animate-fade-in delay-400"> 
-                    <a href="./works.html" class="nav-button block bg-white border border-gray-200 rounded-xl overflow-hidden shadow hover:shadow-lg">
-                        <div class="h-40 bg-indigo-50 flex items-center justify-center">
-                            <span class="button-icon text-5xl">📓</span>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">Works</h3>
-                            <p class="button-description text-gray-600">
-                                Supplementary information on my written works.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <!-- Portfolio Button -->
-                <div class="animate-fade-in delay-600">
-                    <a href="./faq.html" class="nav-button block bg-white border border-gray-200 rounded-xl overflow-hidden shadow hover:shadow-lg">
-                        <div class="h-40 bg-purple-50 flex items-center justify-center">
-                            <span class="button-icon text-5xl">❔</span>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">FAQ</h3>
-                            <p class="button-description text-gray-600">
-                                You got questions? I got answers.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <!-- Contact Button -->
-                <div class="animate-fade-in delay-800">
-                    <a href="/contact" class="nav-button block bg-white border border-gray-200 rounded-xl overflow-hidden shadow hover:shadow-lg">
-                        <div class="h-40 bg-green-50 flex items-center justify-center">
-                            <span class="button-icon text-5xl">📞</span>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-800 mb-2">Contact</h3>
-                            <p class="button-description text-gray-600">
-                               Wanna get in touch :D?
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </div>
+
+    <div class="profile-banner">
+
+        <!-- avatar -->
+        <div class="profile-pic">
+            <img src="assets/img/icon.png" alt="Avatar">
         </div>
-        <!-- Call to Action Section -->
-        <!-- Footer -->
+        <!-- description -->
+        <div class="profile-text">
+            <p>You may call me Alcastor or Alas, I am an interdimensional cataloguer. With my many years of observations
+                I have decided to begin writing down these worlds I have observed and sharing it with this world.</p>
+
+            <p>This may also include my attempts to recreate some of the things I have seen in the form of artwork.</p>
+
+            <p>In my freetime you'll find me reading, doing art, and enjoying the many other joys of life like the boon
+                that is hottubs or spending time with friends.</p>
+
+            <p>Side note, I am purely an amateur in all my pursuits, but they bring me the greatest of joy as well as
+                the support from lovely people like you reading this.</p>
+        </div>
+        <!-- floating books  -->
+        <div class="books-icon">
+            <img src="assets/img/6.png" alt="books">
+        </div>
     </div>
-     <script>
-    // Simple script to handle animations
-    document.addEventListener('DOMContentLoaded', function() {
-        const animatedElements = document.querySelectorAll('.animate-fade-in');
-        
-        // Helper function to check if element is in viewport
-        function isInViewport(element) {
-            const rect = element.getBoundingClientRect();
-            return (
-                rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
-                rect.bottom >= 0
-            );
-        }
-        
-        // Function to handle scroll animations
-        function handleScrollAnimations() {
-            animatedElements.forEach(element => {
-                if (isInViewport(element)) {
-                    element.style.animationPlayState = 'running';
-                }
-            });
-        }
-        
-        // Initial check for elements in viewport
-        handleScrollAnimations();
-        
-        // Add scroll listener
-        window.addEventListener('scroll', handleScrollAnimations);
-    });
-    </script>
+    </div>
+    <!--menu-->
+    <nav class="main-menu fade-in">
+        <span class="menu-deco deco-left">✦</span>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#faq">F.A.Q</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <span class="menu-deco deco-right">✦</span>
+    </nav>
+    <main id="content">
+        <div class="container-frame fade-in">
+
+            <!--decorative corners-->
+            <div class="corner top-left"></div>
+            <div class="corner top-right"></div>
+            <div class="corner bottom-left"></div>
+            <div class="corner bottom-right"></div>
+            <!-- pages -->
+            <div class="frame-content"></div>
+        </div>
+    </main>
+    <!--scripts-->
+
+    <script src="script.js"></script>
 </body>
+
+<footer class="theme-credit">
+    🍓 code by <a href="https://tumblr.com/starwiishesx" target="_blank">@starwiishesx</a>
+</footer>
+
 </html>

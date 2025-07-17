@@ -1,0 +1,73 @@
+.page {
+  font-family: 'Delius Swash Caps', cursive;
+  color: #dfcca8;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.page h2 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.page p {
+  margin-bottom: 15px;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  color: #dfcca8;
+  font-size: 1.1rem;
+  font-family: 'Delius Swash Caps', cursive;
+  cursor: pointer;
+  padding: 10px 0;
+  transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+  color: #fff0d5;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  padding-left: 10px;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 500px; 
+  opacity: 1;
+}
+
+.faq-question {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  color: #dfcca8;
+  font-size: 1.1rem;
+  font-family: 'Delius Swash Caps', cursive;
+  cursor: pointer;
+  padding: 10px 0;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.faq-question .symbol {
+  display: inline-block;
+  transition: transform 0.4s ease;
+}
+
+.faq-item.open .faq-question .symbol {
+  transform: rotate(45deg) scale(1.2);
+  color: #fff0d5;
+}
