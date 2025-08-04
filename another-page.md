@@ -7,20 +7,20 @@ layout: default copy
 <div class="image-gallery">
   <!-- Password-protected image (has data-password attribute) -->
   <div class="image-container password-protected">
-    <img src="/assets/images/folder.png" alt="Protected image" class="responsive-image" 
+    <img src="/assets/img/folder.png" alt="Protected image" class="responsive-image" 
          data-target="./1.html" data-password="$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy">
          <p class="image-caption">Restricted</p>
   </div>
   
   <!-- Regular image (no password protection) -->
   <div class="image-container">
-    <img src="/assets/images/folder.png" alt="Regular image" class="responsive-image" 
+    <img src="/assets/img/folder.png" alt="Regular image" class="responsive-image" 
          data-target="./confident_redacted.html">
           <p class="image-caption">E Files</p>
   </div>
 
   <div class="image-container">
-    <img src="/assets/images/folder.png" alt="Another regular image" class="responsive-image" 
+    <img src="/assets/img/folder.png" alt="Another regular image" class="responsive-image" 
          data-target="./redacted.html">
     <p class="image-caption">C Files</p>
   </div>
