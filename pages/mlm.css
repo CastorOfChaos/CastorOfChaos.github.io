@@ -1,0 +1,259 @@
+/* MLM Page Specific Styles */
+
+/* Page background - matches body background from styles.css */
+.page {
+    background-image: url('/assets/img/4.png');
+    background-size: cover;
+    background-repeat: repeat;
+    min-height: 100vh;
+}
+
+/* Back Button */
+.back-button {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 20px 0 10px 0;
+    border: 2px solid #dfcca8;
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.4);
+    color: #dfcca8;
+    text-decoration: none;
+    font-family: 'Delius Swash Caps', cursive;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.back-button:hover {
+    background: rgba(223, 204, 168, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.back-button::before {
+    content: '← ';
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+
+.back-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.back-button:hover::after {
+    left: 100%;
+}
+
+/* Book Container */
+.book-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 40px;
+    border: 1px solid #dfcca8;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.3);
+    font-family: 'Delius Swash Caps', cursive;
+    color: #dfcca8;
+}
+
+/* Book Section */
+.book-section {
+    margin-bottom: 40px;
+}
+
+.book-details {
+    text-align: center;
+}
+
+.book-title {
+    font-size: 2.5rem;
+    margin: 0 0 10px 0;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.book-subtitle {
+    font-size: 1.3rem;
+    margin: 0 0 20px 0;
+    color: #dfcca8;
+    font-weight: normal;
+}
+
+/* Meta tags */
+.book-meta {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0 30px 0;
+    flex-wrap: wrap;
+}
+
+.meta-item {
+    background: rgba(223, 204, 168, 0.2);
+    border: 1px solid #dfcca8;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.meta-item:hover {
+    background: rgba(223, 204, 168, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Book Description */
+.book-description {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.book-description p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Navigation Section */
+.navigation-section {
+    border-top: 1px solid #dfcca8;
+    padding-top: 30px;
+}
+
+.nav-title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 0 30px 0;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Buttons Grid */
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Navigation Buttons */
+.nav-button {
+    display: block;
+    padding: 25px 20px;
+    border: 2px solid #dfcca8;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    font-size: 1.1rem;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.nav-button:hover {
+    background: rgba(223, 204, 168, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.nav-button span {
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 8px;
+    color: #dfcca8;
+    font-weight: normal;
+    transition: color 0.3s ease;
+}
+
+.nav-button:hover span {
+    color: #ffffff;
+}
+
+/* Add a subtle glow effect */
+.nav-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.nav-button:hover::before {
+    left: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .book-container {
+        margin: 20px;
+        padding: 30px 20px;
+    }
+    
+    .book-title {
+        font-size: 2rem;
+    }
+    
+    .book-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .book-meta {
+        gap: 10px;
+    }
+    
+    .meta-item {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+    
+    .buttons-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .nav-button {
+        padding: 20px 15px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .book-container {
+        margin: 10px;
+        padding: 20px 15px;
+    }
+    
+    .book-title {
+        font-size: 1.8rem;
+    }
+    
+    .nav-title {
+        font-size: 1.6rem;
+    }
+}
