@@ -268,25 +268,25 @@ body {
 .top-left {
     top: 0;
     left: 0;
-    background-image: url('assets/img/2-a.png');
+    background-image: url('/assets/img/2-a.png');
 }
 
 .top-right {
     top: 0;
     right: 0;
-    background-image: url('assets/img/2-b.png');
+    background-image: url('/assets/img/2-b.png');
 }
 
 .bottom-left {
     bottom: 0;
     left: 0;
-    background-image: url('assets/img/2-c.png');
+    background-image: url('/assets/img/2-c.png');
 }
 
 .bottom-right {
     bottom: 0;
     right: 0;
-    background-image: url('assets/img/2-d.png');
+    background-image: url('/assets/img/2-d.png');
 }
 
 
